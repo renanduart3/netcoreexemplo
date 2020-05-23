@@ -23,3 +23,5 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+    - name: Copia
+      run: copy C:\actions-runner\_work\netcoreexemplo\netcoreexemplo\bin\Release\netcoreapp3.1 C:\inetpub\testecore
